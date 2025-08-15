@@ -28,7 +28,10 @@
     padding: 10rem 0;
 }
 
-
+.footer h3{
+    color: var(--background-color);
+    font-family: var(--font-logo);
+}
 
 *{
     margin: 0;
@@ -225,11 +228,6 @@ ul li{
 .footer{
     background-color: var(--footer-background);
     color: var(--background-color);
-}
-
-.footer h3{
-    color: var(--background-color);
-    font-family: var(--font-logo);
 }
 
 .footer .footer-inner{
