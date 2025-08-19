@@ -16,15 +16,15 @@
 </head>
 <body class="!font-poppins">
 
-    <header class="p-5 header">
-        <div class="container header-inner flex justify-between items-center">
-        <h1 class="text-yellow-900 text-3xl font-logo font-bold">Café Aurora</h1>
+    <header class="p-5 header md:px-8 md:py-6 lg:py-6 lg:px-10">
+        <div class="container header-inner flex justify-between items-center lg:w-[100%]">
+        <h1 class="text-yellow-800 text-3xl font-logo font-bold lg:text-4xl">Café Aurora</h1>
             <nav class="menu" aria-label="Menu Principal">
                 <div class="menu-mobile lg:hidden">
                     <button class="text-2xl font-bold" id="menu-toggle" aria-label="Abrir Menu Mobile">☰</button>
                 </div>
-                <div class="menu-desktop hidden lg:block">
-                    <ul>
+                <div class="menu-desktop hidden lg:flex lg:justify-self-end">
+                    <ul class="flex flex-row gap-8">
                         <li><a href="#">Início</a></li>
                         <li><a href="#">Cardápio</a></li>
                         <li><a href="#">Contato</a></li>
@@ -46,19 +46,19 @@
             </div>
         </section>
 
-        <section class="cardapio bg-stone-50 py-20 px-4">
-            <div class="container">
+        <section class="cardapio bg-stone-50 py-20 px-4 lg:px-8">
+            <div class="container flex flex-col justify-center items-center">
                 <h2 class="cardapio-title text-center text-[32px] mb-2 font-bold leading-normal">Nossos Cafés Especiais</h2>
-                <p class="cardapio-description text-center text-neutral-500 mb-12">Descubra nossa seleção de café premium, cuidadosamente preparados para oferecer uma experiências sensorial inesquecível</p>
+                <p class="cardapio-description text-center text-neutral-500 mb-12 md:w-[80%] lg:w-[65%]">Descubra nossa seleção de café premium, cuidadosamente preparados para oferecer uma experiências sensorial inesquecível</p>
             </div>
 
-            <div class="grid-coffes container grid grid-cols-1 gap-8">
+            <div class="grid-coffes container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="card bg-orange-100 rounded-2xl overflow-hidden shadow-md">
                     <img src="./Images/espresso.jpg" alt="Espresso Clássico">
                     <div class="card-body p-6">
                         <h3 class="text-[20px] font-semibold">Espresso Clássico</h3>
                         <p class="text-neutral-600 mb-4">Intenso e encorpado, com crema perfeito e notas de chocolate</p>
-                        <span class="price text-yellow-900 font-semibold">R$ 8,90</span>
+                        <span class="price text-yellow-800 font-semibold">R$ 8,90</span>
                     </div>
                 </div>
 
@@ -67,7 +67,7 @@
                     <div class="card-body p-6">
                         <h3 class="text-[20px] font-semibold">Capuccino Cremoso</h3>
                         <p class="text-neutral-600 mb-4">Equilibrado e suave com espuma aveludada e canela polvilhada</p>
-                        <span class="price text-yellow-900 font-semibold">R$ 12,50</span>
+                        <span class="price text-yellow-800 font-semibold">R$ 12,50</span>
                     </div>
                 </div>
 
@@ -76,7 +76,7 @@
                     <div class="card-body p-6">
                         <h3 class="text-[20px] font-semibold">Café Gelado</h3>
                         <p class="text-neutral-600 mb-4">Refrescante e aromático, com toques de baunilha e calda de caramelo</p>
-                        <span class="price text-yellow-900 font-semibold">R$ 14,90</span>
+                        <span class="price text-yellow-800 font-semibold">R$ 14,90</span>
                     </div>
                 </div>
                 
@@ -85,16 +85,16 @@
                     <div class="card-body p-6">
                         <h3 class="text-[20px] font-semibold">Café Coado Especial</h3>
                         <p class="text-neutral-600 mb-4">Método tradicional que realça notas frutadas e acidez equilibrada</p>
-                        <span class="price text-yellow-900 font-semibold">R$ 10,90</span>
+                        <span class="price text-yellow-800 font-semibold">R$ 10,90</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="contact bg-orange-100 py-16 px-4">
-            <div class="container contact-box bg-neutral-50 rounded-2xl overflow-hidden flex flex-col">
-                <div class="contact-text p-8 mb-4">
-                    <h2 class="text-[25px] mb-4 font-bold">Horário de funcionamento</h2>
+        <section class="contact bg-orange-100 py-16 px-4 lg:px-16">
+            <div class="container contact-box bg-neutral-50 rounded-2xl overflow-hidden flex flex-col lg:flex-row lg:start lg:max-w-[900px]">
+                <div class="contact-text p-8 mb-4 lg:p12">
+                    <h2 class="text-[25px] mb-4 font-bold lg:text-[2.5rem]">Horário de funcionamento</h2>
                     <div class="hours">
                         <p class="flex justify-between mb-1"><span>Segunda a sexta</span> <span>07:00 - 20:00</span></p>
                         <p class="flex justify-between mb-1"><span>Sábado</span> <span>08:00 - 22:00</span></p>
@@ -110,8 +110,8 @@
                     <a href="" class="btn bg-yellow-900 text-white py-4 px-8 font-semibold rounded-lg">Ver no Mapa</a>
                 </div>
                 
-                <div class="contact-image col flex h-[300px]">
-                    <img src="./Images/aurora-horario.jpg" alt="Café sendo servido" class="overflow-hidden object-cover">
+                <div class="contact-image col flex h-[300px] lg:h-[500px] lg:flex-grow lg:flex-shrink lg:basis-1/2">
+                    <img src="./Images/aurora-horario.jpg" alt="Café sendo servido" class="overflow-hidden object-cover lg:w-[100%]">
                 </div>
             </div>
         </section>
@@ -119,19 +119,19 @@
     </main>
 
     <footer class="footer bg-[#0a0a1a] text-white">
-        <div class="container footer-inner flex flex-col gap-8 py-8 px-4">
-            <div class="footer-brand col w-[85%] mx-auto text-[0.9rem]">
-                <h3 class="logo mb-2 text-[2rem] font-medium">Café Aurora</h3>
+        <div class="container footer-inner flex flex-col gap-8 py-8 px-4 lg:flex-row lg:px-12 lg:pb-4">
+            <div class="footer-brand col w-[85%] mx-auto text-[0.9rem] lg:flex-grow lg:flex-shrink lg:basis-1/2">
+                <h3 class="logo mb-3 text-[2rem] font-medium">Café Aurora</h3>
                 <p>O melhor café da cidade desde 2015</p>
             </div>
 
-            <div class="footer-social col ">
-                <div class="social-icons flex justify-center gap-4">
-                    <a href="" class="rounded-[50px] bg-zinc-500 p-2"><img src="./Images/instagram.png" class="w-[1.3rem] h-auto" alt="Link para o instagram"></a>
-                    <a href="" class="rounded-[50px] bg-zinc-500 p-2"><img src="./Images/facebook.png" class="w-[1.3rem] h-auto" alt="Link para o Facebook"></a>
-                    <a href="" class="rounded-[50px] bg-zinc-500 p-2"><img src="./Images/whatsapp.png" class="w-[1.3rem] h-auto" alt="Link para o Whatsapp"></a>
+            <div class="footer-social col lg:flex-grow lg:flex-shrink lg:basis-1/2">
+                <div class="social-icons flex justify-center gap-4 lg:justify-end">
+                    <a href="" class="rounded-[50px] bg-zinc-600 p-2"><img src="./Images/instagram.png" class="w-[1.3rem] h-auto" alt="Link para o instagram"></a>
+                    <a href="" class="rounded-[50px] bg-zinc-600 p-2"><img src="./Images/facebook.png" class="w-[1.3rem] h-auto" alt="Link para o Facebook"></a>
+                    <a href="" class="rounded-[50px] bg-zinc-600 p-2"><img src="./Images/whatsapp.png" class="w-[1.3rem] h-auto" alt="Link para o Whatsapp"></a>
                 </div>
-                <p class="text-[0.9rem] pt-8 pb-4 text-center">&copy 2025 Café Aurora. Todos os direitos reservados.</p>
+                <p class="text-[0.9rem] pt-8 pb-4 text-center lg:text-right">&copy 2025 Café Aurora. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
